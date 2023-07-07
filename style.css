@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html, body {
+    height: 100vh;
+
+    background: #FFF8EB;
+}
+
+/* header */
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    width: 80%;
+
+    margin: 10px auto;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav ul {
+    display: flex;
+
+    padding: 20px;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    font: 400 1.5rem 'Open Sans', sans-serif;
+    color: #1A1A1A;
+
+    padding: 10px;
+
+    border-radius: 5px;
+
+    transition: background-color 0.5s ease;
+}
+
+header nav ul li a:hover {
+    background: #F0910C;
+}  
+
+/* .diamond = style for all similar diamonds on the page */ 
+
+.diamond {
+    background-color: #F0910C;
+
+    border-radius: 5px;
+}
+
+/* .button = style for all similar buttons on the page */
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font: 500 1.6rem 'Lexend', sans-serif;
+    color: #FFFFFF;
+    background-color: #F0910C;
+    
+    width: 194px;
+    height: 44px;
+    
+    border-radius: 5px;
+    box-shadow: 0 10px 20px -14px rgba(255, 165, 38, 0.5);
+}
+
+.button:hover {
+    background-color: #f09d28;
+}
+
+/* big images below the header */
+
+.store-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    width: 80%;
+    height: 50vh;
+
+    margin: 25px auto 70px auto;
+}
+
+.store-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 50%;
+    height: 100%;
+    
+    background-color: #F0910C;
+}
+
+.store-logo img {
+    width: 300px;
+
+    margin-bottom: 40px;
+}
+
+.store-logo a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    bottom: 12%;
+
+    width: 130px;
+    height: 40px;
+
+    font: 500 1.6rem 'Lexend', sans-serif;
+    color: #F0910C;
+    background-color: #FFFEFC;
+    
+    border-radius: 5px;
+    
+    box-shadow: 0 10px 20px -14px rgba(236, 214, 196, 0.23);
+}
+
+.store-logo a:hover {
+   background-color: #FEEBCB;
+}
+
+.random-image {
+    width: 50%;
+    height: 100%;
+
+    background: url(./images/random-image.svg) center/cover;
+}
+
+/* main */
+
+main {
+    margin-bottom: 30px;
+}
+
+#title-products {
+    font: 700 3.3rem 'Lexend', sans-serif;
+    color: #1A1A1A;
+    text-align: center;
+
+    margin-bottom: 70px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 15px;
+
+    width: 80%;
+
+    margin: auto;
+}
+
+.card {
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+    visibility: hidden;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+}
+
+.image {
+    height: 300px;
+
+    background: #F6F6F6 url(./images/products/blusa01-110.png) bottom/contain no-repeat;
+}
+
+.content {
+    margin-top: 10px;
+
+    text-align: center;
+}
+
+.item-title {
+    font: 700 2.1rem 'Lexend', sans-serif;
+    color: #1A1A1A;
+
+}
+
+.price {
+    font: 500 2rem 'Lexend', sans-serif;
+    color: #323232;
+}
+
+/* call to action */
+
+.call-to-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    height: 263px;
+    width: 80%;
+
+    margin: auto;
+}
+
+.cta-text p:first-child {
+    font: 700 2.5rem 'Lexend', sans-serif;
+    color: #1A1A1A;
+}
+
+.cta-text p:last-child {
+    font: 600 1.4rem 'Open Sans', sans-serif;
+    color: #536379;
+}
+
+/* footer */
+
+footer {
+    background-color: #1A1A1A;
+
+    width: 100%;
+}
+
+.footer-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 80%;
+
+    margin: auto;
+
+    padding-top: 40px;
+}
+
+.social-media {
+    display: flex;
+    gap: 20px;
+}
+
+.social-media .icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 40px;
+    height: 40px;
+
+    background-color: #F0910C;
+    box-shadow: 0 10px 20px -14px rgba(255, 165, 38, 0.5);
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.social-media .icons:hover {
+    background-color: #f09d28;
+}
+
+.social-media .icons .icon {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+
+    width: 80%;
+
+    margin: 40px auto;
+}
+
+.info-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-icons span {
+    font: 400 1.6rem 'Open Sans', sans-serif;
+    color: #FFFFFF;
+}
+
+.copyright {
+    font: 400 1.4rem 'Open Sans', sans-serif;
+    color: #D9D9D9;
+
+    padding: 30px 0;
+    margin-top: 20px;
+
+    border-top: 1px solid #D9D9D9;
+}
